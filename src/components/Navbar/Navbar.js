@@ -4,26 +4,27 @@ import styles from './Navbar.module.css';
 
 
 function Navbar(){
-    return(
-        <div className='navbar'>
-            
-            <div className='leftSide'>
-               <img className={styles.img} src={'/images/tastymap_logo.png'} alt="로고"></img>  
+
+    return(              
+
+        <div className={styles.navbar}>                        
+            <div className={styles.rightSide}>
+                <img className={styles.img} src={'/images/tastymap_logo.png'} alt="로고"></img>  
                <h1>맛 있을 지도</h1>       
             </div>  
 
-            <div className='center'>
-                <Link >About</Link>
-                <Link >게시판</Link>               
+            <div className={styles.center}>                
+                <Link to='/pages.About'>About</Link>
+                <Link to='pages.About'>게시판</Link>               
             </div>   
 
-            <div className='rightSide'>
-                <Link >로그인</Link>
-                <Link >회원가입</Link>               
-            </div>   
-
-        </div>
-
+            <div className={styles.leftSide}>
+                <buttum className={styles.btn} onClick='pages.About'>로그인</buttum>
+                <buttum className={styles.btn} onClick='pages.About'>회원가입</buttum>
+                {/* <Link to='pages.About'>로그인</Link>
+                <Link to='pages.About'>회원가입</Link>                */}
+            </div>
+        </div>         
         
     )
 }

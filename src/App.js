@@ -1,15 +1,19 @@
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import { Navbar } from './components';
-import { Main } from './pages';
+import * as pages from './pages';
   
 
 function App() {
   return (
-    <div className="App">      
+    <div className="App">   
+
+      {/* <Navbar />
+      <pages.Main />  */}
+
       <Router> 
-      <Navbar />       
+      <Navbar />            
         <Routes>
-          <Route path="/" element={ <Main /> } />
+          <Route path="/" element={ <pages.Main /> } />
         </Routes>
       </Router>      
     </div>
