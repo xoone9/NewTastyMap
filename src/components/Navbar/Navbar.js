@@ -17,7 +17,7 @@ function Navbar(){
                 <Link to='/pages.About'><text>About</text></Link>
                 <Link to='pages.About'><text>게시판</text></Link>               
             </div>   
-
+            
             <div className={styles.leftSide}>
                 <buttum className={styles.btn} onClick='pages.About'>로그인</buttum>
                 <buttum className={styles.btn} onClick='pages.About'>회원가입</buttum>
