@@ -4,7 +4,9 @@ import Content from './Content/Content';
 
 import Footer from './Footer/Footer';
 
+import Table from './Table/Table';
+
 
  
 
-export {Navbar, Content, Footer};
+export {Navbar, Content, Footer, Table};
