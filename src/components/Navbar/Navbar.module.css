@@ -55,7 +55,7 @@ button:hover{
     margin-right: 10px;  
 }
 
-.navbar .rightSide text{   
+.navbar .rightSide p{   
     text-decoration: none;
     margin-left: 10%;    
 }

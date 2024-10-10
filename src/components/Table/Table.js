@@ -1,5 +1,5 @@
 import React from 'react'
-import { useReactTable, createColumnHelper, flexRender } from '@tanstack/react-table'
+import { useReactTable, createColumnHelper, getCoreRowModel, flexRender } from '@tanstack/react-table'
 
 //데이터 정의
 
@@ -29,25 +29,34 @@ const data = [
 ]
 
 
+const columnHelper = createColumnHelper();
+
 //컬럼 정의
-const columns = [
-    {
-        accessoryKey: 'firstName',
-        header: 'First Name'  ,  
-        cell: (props) => <p>{props.getValue()}</p>
+// const columns = [
+//     {
+//         accessoryKey: 'firstName',
+//         header: 'First Name'  ,  
+//         cell: (props) => <p>{props.getValue()}</p>
         
-    },
-    {
-        accessoryKey: 'age',
-        header: 'Age' ,      
-        cell: (props) => <p>{props.getValue()}</p>
-    }
+//     },
+//     {
+//         accessoryKey: 'age',
+//         header: 'Age' ,      
+//         cell: (props) => <p>{props.getValue()}</p>
+//     }
+// ]
+
+const columns = [
+    columnHelper.accessor("firstName", { header: "이름" }),
+    columnHelper.accessor("age", { header: "나이" }),
 ]
 
 function Table(){
     //테이블 초기화
-    const table = useReactTable({columns, data}); 
+    const table = useReactTable({columns, data, getCoreRowModel: getCoreRowModel(),}); 
 
+    console.log(table);
+    
     return (
 
         <table>

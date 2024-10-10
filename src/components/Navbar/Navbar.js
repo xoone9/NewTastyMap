@@ -13,8 +13,8 @@ function Navbar(){
               </ul>  
 
               <ul className={styles.center}>                
-                  <Link to='/about'><text>About</text></Link>
-                  <Link to='/boardlist'><text>게시판</text></Link>       
+                  <Link to='/about'><p>About</p></Link>
+                  <Link to='/boardlist'><p>게시판</p></Link>       
               </ul> 
               
               <ul className={styles.leftSide}> 
