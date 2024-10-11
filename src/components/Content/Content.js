@@ -1,20 +1,32 @@
-import React from 'react'
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
+import * as pages from '../../pages';
 import styles from './Content.module.css'
+  
+
+function Content() {
+
+  return (
+    <div className={styles.warp}>           
+          
+          <Routes>
+            <Route path="/" element={<pages.Home />} />            
+          </Routes> 
+
+          <Routes>
+            <Route path="/about" element={<pages.About />} />
+            <Route path="/boardlist" element={<pages.BoardList />} />
+            {/* <Route path="/boardDetail:id" element={<pages.BoardDetail />} />             */}
+            <Route path="/boardDetail" element={<pages.BoardDetail />} />
+          </Routes>
 
 
-
-function Content(){
-    return(
-        <body>
-        <div className={styles.content}>  
-            <p>눈으로 맛보는 즐거움 -!</p>         
-            <p>맛 있을 지도?</p>
-            <img src={'/images/tastymap_kmap.png'} alt="로고" />
-        </div>
-        </body>
-    )
+          <Routes>
+            <Route path="/join" element={<pages.Join />} />
+            <Route path="/login" element={<pages.Login />} />
+          </Routes>         
+      
+    </div>
+  )
 }
 
-
-
-export default Content
+export default Content;

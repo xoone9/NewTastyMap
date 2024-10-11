@@ -1,0 +1,16 @@
+
+.content{   
+    text-align: center;  
+}
+
+.content p{      
+    text-align: center; 
+    font-size: 40px;   
+    margin: 20px;
+    /* flex-direction: column; */
+    height: 100%;
+}
+
+img{       
+    width:50%;    
+}

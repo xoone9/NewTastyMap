@@ -1,0 +1,23 @@
+table{
+    width: 80%;  
+    margin-top: 10px;       /*header와 띄우기 위해서*/
+    margin-left: 10%;       /*표 가운데 정렬 하기 위해서 -> 표 넓이가 80%, 오른쪽/왼쪽 넓이가 10%씩*/
+    border: 1px solid #9c6644;
+    box-shadow: 0 2px 5px rgba(0,0,0,.25);    
+    border-collapse: collapse;
+    border-radius: 5px;         /*표 모서리 둥글게*/
+    overflow: hidden;
+    text-align: center;     /*표 텍스트 가운데 정렬*/
+}
+
+thead{
+    border-bottom: 1px solid #9c6644;
+    font-size: 20px;
+}
+
+tr:hover{
+    background-color:#FCD5CE;       /*TODO: #1 임시방편으로 hover로 해놓음 thead 부분까지 다 바뀌니깐 tbody쪽만 바뀌게 수정해야함*/ 
+}
+
+
+

@@ -9,9 +9,9 @@ body {
   margin: 0;
   font-family: 'HancomMalangMalang-Regular';
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: grayscale; 
 }
 
-code {
+/* code {
   font-family: 'HancomMalangMalang-Regular';
-}
+} */
