@@ -1,23 +1,24 @@
 import React from 'react';
 import styles from './Board.module.css'
 
+
 function BoardDetail (){
 
     return(
 
-        <div className={styles.tableWarp}>   
-            <table className={styles.tableWarp}>
+        <div>   
+            <table className={styles.table_detail}>
                 <thead>
-                    <tr>(종류)양식/(제목)맛있게 먹었지만 가격이 아쉬워요.</tr>
+                    <tr><td colSpan='3'>(종류)양식/(제목)맛있게 먹었지만 가격이 아쉬워요.</td></tr>
                     <tr>
-                        <td>(작성자)맛집탐방가</td>
+                        <td width='70%'>(작성자)맛집탐방가</td>
                         <td>(날짜)2021-10-12 03:19</td>   
                         <td>(추천)5</td>                        
                     </tr>
-                    <tr>(식당주소)경기도 김포시....</tr>                   
+                    <tr><td colSpan='3'>(식당주소)경기도 김포시....</td></tr>                   
                 </thead>
                 <tbody>
-                   <tr>(내용)맛집에 다녀왔습니다.맛집에 다녀왔습니다.맛집에 다녀왔습니다.
+                   <tr><td colSpan='3'>(내용)맛집에 다녀왔습니다.맛집에 다녀왔습니다.맛집에 다녀왔습니다.
                     맛집에 다녀왔습니다.맛집에 다녀왔습니다.맛집에 다녀왔습니다.
                     맛집에 다녀왔습니다.맛집에 다녀왔습니다.맛집에 다녀왔습니다.
                     맛집에 다녀왔습니다.맛집에 다녀왔습니다.맛집에 다녀왔습니다.
@@ -29,7 +30,7 @@ function BoardDetail (){
                     맛집에 다녀왔습니다.맛집에 다녀왔습니다.맛집에 다녀왔습니다.
                     맛집에 다녀왔습니다.맛집에 다녀왔습니다.맛집에 다녀왔습니다.
                     맛집에 다녀왔습니다.맛집에 다녀왔습니다.맛집에 다녀왔습니다.
-                    맛집에 다녀왔습니다.맛집에 다녀왔습니다.맛집에 다녀왔습니다.</tr>
+                    맛집에 다녀왔습니다.맛집에 다녀왔습니다.맛집에 다녀왔습니다.</td></tr>
                 </tbody>
             </table>
 

@@ -62,7 +62,7 @@ function BoardList(){
 
     return (
 
-        <div className={styles.tableWarp}>        
+        <div className={styles.table_list}>        
         {/* <table className={styles.table}>
             <thead>                
                 {table.getHeaderGroups().map(headerGroup => (
@@ -80,7 +80,7 @@ function BoardList(){
                  }
             </tbody>
         </table> */}  
-            <table className={styles.tableWarp}>
+            <table>
                 <thead>
                     <tr>
                         {headerName.map((item, index) => {
