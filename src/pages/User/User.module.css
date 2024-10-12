@@ -1,0 +1,47 @@
+
+.user_group{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.user_group img{
+    width: 20%;
+}
+
+.user_group button{
+    width: 20%;
+    height: 40px;
+    margin-top: 20px;  ;
+    text-align: center;
+    background-color: #cb997e;
+    border: none;
+    /*border: 1px solid #cb997e;*/
+    border-radius: 50px;
+    box-shadow: -3px -3px 7px #ffffff73, 3px 3px 5px rgba(55, 54, 52, 0.288);  
+    border-collapse: collapse;  
+    font-size: 15px;  
+
+}
+
+.user_group button:hover {
+    background-color: #F8EDEB;
+}
+
+
+.user_group_form{  
+    width:20%;     
+    display: flex;
+    flex-direction: column;     
+    margin: 0 auto;
+}
+
+.user_group_form input{   
+    height: 40px;
+    margin-top: 20px;  ;
+    text-align: center;
+    border: none;
+    /*border: 1px solid #cb997e;*/
+    border-radius: 50px;
+    box-shadow: -3px -3px 7px #ffffff73, 3px 3px 5px rgba(55, 54, 52, 0.288);     
+    border-collapse: collapse; 
+}
