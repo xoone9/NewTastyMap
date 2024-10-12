@@ -10,31 +10,6 @@ h1{
     font-weight: bold;
 }
 
-button{
-    height: 30px;
-    width: 80px;
-    color: #cb997e;
-    border: none;
-    border-radius: 10px;
-    border-color: #F8EDEB;
-    background-color: #F8EDEB;
-    /* text-decoration: none; */
-    text-align:center; 
-    font-family: 'HancomMalangMalang-Regular'; 
-    font-size: 15px;
-    font-weight: bold;    
-    margin: 5px;
-    /* align-content: center; */
-    /* justify-content: center;  */
-    cursor: pointer;
-}
-
-button:hover{    
-    color: #F8EDEB;
-    background-color: #9c6644;            
-}
-
-
 .navbar {
     background-color: #cb997e;   
     height: 80px;
@@ -65,15 +40,18 @@ button:hover{
 } */
 
 .navbar .center{
-    flex: 50%;   
-    display: flex;
+    flex: 50%;      
+    display: flex; 
     align-items: center;
     justify-content: center;
 }
 
-.navbar .center text{  
-    font-size: 30px;  
-    margin: 5px; 
+.navbar .center p{ 
+    color: #F8EDEB;    
+    font-style: italic; 
+    font-size: 30px; 
+    text-decoration-line: underline; 
+    margin-left: 50px;
 }
 
 .navbar .leftSide{
@@ -81,6 +59,34 @@ button:hover{
     display: flex;  
     align-items: center;
     justify-content: right;
+}
+
+
+.navbar .leftSide button{
+    height: 30px;
+    width: 80px;
+    color: #F8EDEB;
+    background-color: #dea687;
+    border: none;
+    /*border: 1px solid #cb997e;*/
+    border-radius: 50px;
+    box-shadow: -2px -2px 15px #f7c79fa3, 3px 3px 5px rgba(52, 32, 1, 0.216);  
+    /*border-collapse: collapse;*/
+    text-align:center; 
+    font-family: 'HancomMalangMalang-Regular'; 
+    font-size: 15px;
+    font-weight: bold;    
+    margin-right: 20px;
+    /* align-content: center; */
+    /* justify-content: center;  */
+    cursor: pointer;
+}
+
+
+
+.navbar .leftSide button:hover{    
+    color: #F8EDEB;
+    background-color: #9c6644;            
 }
 
 

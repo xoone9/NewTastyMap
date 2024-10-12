@@ -1,7 +1,8 @@
-table{
-    width: 80%;  
-    margin-top: 10px;       /*header와 띄우기 위해서*/
-    margin-left: 10%;       /*표 가운데 정렬 하기 위해서 -> 표 넓이가 80%, 오른쪽/왼쪽 넓이가 10%씩*/
+
+/* boardList */
+.board_list{ 
+    width: 100%;
+    margin-top: 20px;
     border: 1px solid #9c6644;
     box-shadow: 0 2px 5px rgba(0,0,0,.25);    
     border-collapse: collapse;
@@ -10,39 +11,20 @@ table{
     text-align: center;     /*표 텍스트 가운데 정렬*/
 }
 
-thead{
-   
-}
-
-tr:hover{
-   
-}
-
-.table_list table{
-    width: 80%;  
-    margin-top: 10px;       /*header와 띄우기 위해서*/
-    margin-left: 10%;       /*표 가운데 정렬 하기 위해서 -> 표 넓이가 80%, 오른쪽/왼쪽 넓이가 10%씩*/
-    border: 1px solid #9c6644;
-    box-shadow: 0 2px 5px rgba(0,0,0,.25);    
-    border-collapse: collapse;
-    border-radius: 5px;         /*표 모서리 둥글게*/
-    overflow: hidden;
-    text-align: center;     /*표 텍스트 가운데 정렬*/
-}
-
-.table_list thead{
+.board_list thead{
     border-bottom: 1px solid #9c6644;
     font-size: 20px;
 }
 
-.table_list tr:hover{
+.board_list tr:hover{
     background-color:#FCD5CE;       /*TODO: #1 임시방편으로 hover로 해놓음 thead 부분까지 다 바뀌니깐 tbody쪽만 바뀌게 수정해야함*/ 
 }
 
-.table_detail{
-    width: 80%;  
-    margin-top: 10px;       /*header와 띄우기 위해서*/
-    margin-left: 10%;       /*표 가운데 정렬 하기 위해서 -> 표 넓이가 80%, 오른쪽/왼쪽 넓이가 10%씩*/
+
+/* boardDetail */
+.board_detail{   
+    width: 100%;   
+    margin-top: 20px;
     border: 1px solid #9c6644;
     box-shadow: 0 2px 5px rgba(0,0,0,.25);    
     border-collapse: collapse;
@@ -50,6 +32,70 @@ tr:hover{
     overflow: hidden;
     text-align: center;     /*표 텍스트 가운데 정렬*/
 }
+
+.board_detail thead tr{
+    border: 1px dashed #9c6644;
+}
+
+.board_detail thead td{
+    border: 1px dashed #9c6644;;
+}
+
+/* 게시판 아래 (버튼, 페이징 등) */
+.board_footer{   
+    display: flex;
+    justify-content: end;
+}
+
+.board_footer button{
+    height: 30px;
+    width: 80px;
+    color: #cb997e;
+    border: none;
+    border-radius: 10px;
+    border-color: #F8EDEB;
+    background-color: #F8EDEB;  
+    text-align:center; 
+    font-family: 'HancomMalangMalang-Regular'; 
+    font-size: 15px;
+    font-weight: bold;    
+    margin-top: 10px;
+    margin-left: 5px;  
+    cursor: pointer;
+}
+
+.board_footer button:hover{    
+    color: #F8EDEB;
+    background-color: #9c6644;            
+}
+
+
+/* boardWrite */
+
+.board_write_wrap{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.board_write_form{
+    width:100%;
+    /* display:flex;
+    justify-content: center; */
+}
+
+.board_write_form span{
+    width: 90%;
+    /*margin-right: 30px;*/
+}
+
+.board_write_form input{
+    width: 65%;
+}
+
+.board_write_01 select{
+    min-width: 500px;
+}
+
 
 
 

@@ -6,7 +6,7 @@ import styles from './Content.module.css'
 function Content() {
 
   return (
-    <div className={styles.warp}>           
+    <div className={styles.wrap}>           
           
           <Routes>
             <Route path="/" element={<pages.Home />} />            
@@ -17,6 +17,7 @@ function Content() {
             <Route path="/boardlist" element={<pages.BoardList />} />
             {/* <Route path="/boardDetail:id" element={<pages.BoardDetail />} />             */}
             <Route path="/boardDetail" element={<pages.BoardDetail />} />
+            <Route path="/boardWrite" element={<pages.BoardWrite />} />
           </Routes>
 
 

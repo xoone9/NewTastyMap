@@ -146,6 +146,9 @@ function Table(){
                     })}
                 </tbody>
             </table>
+            <div className={styles.table_footer}>
+                <Link to = '/boardWrite'><button>글쓰기</button></Link>                       
+            </div>
            
 
         </div>

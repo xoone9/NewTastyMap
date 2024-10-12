@@ -18,7 +18,7 @@ function Navbar(){
               </ul> 
               
               <ul className={styles.leftSide}> 
-                  <Link to = '/join'><button>로그인</button></Link>
+                  <Link to = '/login'><button>로그인</button></Link>
                   <Link to = '/join'><button>회원가입</button></Link>
               </ul>
           </nav>

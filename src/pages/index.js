@@ -7,9 +7,9 @@ import BoardDetail from './Board/BoardDetail';
 import BoardWrite from './Board/BoardWrite';
 import BoardUpdate from './Board/BoardUpdate';
 
-import Join from './Personal/Join';
-import Login from './Personal/Login';
-import Logout from './Personal/Logout';
+import Join from './User/Join';
+import Login from './User/Login';
+import Logout from './User/Logout';
 
 
 

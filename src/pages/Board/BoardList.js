@@ -1,5 +1,4 @@
 import React from 'react'
-import Table from '../../components/Table/Table'
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import styles from './Board.module.css'
 import { Link } from 'react-router-dom'
@@ -62,7 +61,7 @@ function BoardList(){
 
     return (
 
-        <div className={styles.table_list}>        
+        <div>        
         {/* <table className={styles.table}>
             <thead>                
                 {table.getHeaderGroups().map(headerGroup => (
@@ -80,7 +79,7 @@ function BoardList(){
                  }
             </tbody>
         </table> */}  
-            <table>
+            <table className={styles.board_list}>
                 <thead>
                     <tr>
                         {headerName.map((item, index) => {
@@ -94,11 +93,8 @@ function BoardList(){
                             <tr key={index}>
                                 <td>{item.num}</td>
                                 <td>{item.type}</td>
-                                <td>{item.location}</td>
-                               
+                                <td>{item.location}</td>                               
                                 <Link to='/boardDetail'><td>{item.title}</td></Link>
-                            
-                               
                                 <td>{item.writer}</td>
                                 <td>{item.date}</td>
                                 <td>{item.recommend}</td>
@@ -107,8 +103,10 @@ function BoardList(){
                     })}
                 </tbody>
             </table>
-           
 
+            <div className={styles.board_footer}>
+                <Link to = '/boardWrite'><button>글쓰기</button></Link>                       
+            </div>
         </div>
     )
 }
